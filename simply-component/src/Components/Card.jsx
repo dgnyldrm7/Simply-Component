@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
+    const title = props.title;
+    const desc = props.desc;
   return (
     <div>
-        <h1>Card1</h1>
+        <h1>title = {title}</h1>
+        <h5>desc = {desc}</h5>
     </div>
   )
 }
